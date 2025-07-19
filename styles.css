@@ -1,0 +1,74 @@
+#header1 {
+    color: white;
+    margin: 50px;
+    font-size: 2.7em
+}
+
+* {
+    background-color: #111111
+}
+
+#btn {
+    background-color: #212121;
+    color: white;
+    padding: 15px 60px;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    box-shadow: 0 4px 15px #38383866;
+    margin-top: 30px;
+    border: rgba(0, 0, 0, 0) solid 3px;
+}
+
+section {
+    border: 3px dashed rgba(255, 0, 0, 0.19);
+    width: 900px;
+    height: 600px;
+    margin-left: 30px
+}
+
+#tet {
+    background-color: #212121;
+    width: 600px;
+    height: 200px;
+    color: white;
+    font-size: 2em;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(41, 41, 41, 0.4);
+}
+
+@keyframes borderFlash {
+    0% {
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+    50% {
+        border-color: rgb(199, 199, 199);
+    }
+    100% {
+        border-color: rgba(134, 134, 134, 0.4);
+    }
+}
+
+.flash-border {
+    border: 3px solid rgba(84, 84, 84, 0.4);
+    animation: borderFlash 0.4s ease-in-out;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        font-size: 17px;
+    }
+    50% {
+        font-size: 24px;
+    }
+    100% {
+        font-size: 28px;
+    }
+}
+
+.buttonAnimation {
+    font-size: 15px;
+    animation: buttonAnimation 0.2s linear;
+}
